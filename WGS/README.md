@@ -7,7 +7,7 @@ Somatic Variant Calling is implemented across six main procedures:
 3.Somatic Variant Calling \
 4.Variant Annotation \
 5.Mutation Aggregation \
-6.Aggregated Mutation Masking \
+6.Aggregated Mutation Masking 
 
 
 Overall workflow:
