@@ -28,10 +28,11 @@ Germline genotype callers such as GATK's HaplotypeCaller are optimized for diplo
 
 # Data
 As part of its goal to overcome obstacles in realizing the full benefits of the application of genomic methods for cancer diagnosis and the guidance of precision treatment, the BCM Human Genome Sequencing Center and the TCRB has made genomic sequence data from high quality human tumor specimens with matched normal freely available to the public without the barriers that other, more restrictive data sharing initiatives impose. This data set can be accessed at http://txcrb.org/open.html (not valid)
-https://platform.dnanexus.com/projects/BQZ8jJ80JvPgyQxgQ18009vg/data/ (latest link)
+https://platform.dnanexus.com/projects/BQZ8jJ80JvPgyQxgQ18009vg/data/ (latest link,wget + link)
 We have applied mutect2 to the case_001, case_002 and case_003 tumor-normal pair data. For case_001, download TCRBOA1-N-WEX.read1.fastq.bz2, TCRBOA1-N-WEX.read2.fastq.bz2, TCRBOA1-T-WEX.read1.fastq.bz2 and TCRBOA1-T-WEX.read1.fastq.bz2. Download the corresponding data for case_002 and case_003.
 
-Reference data
+Reference data in google cloud (Download by google-cloud-sdk: gsutil cp -p rawpath localpath,see also in https://cloud.google.com/sdk/docs/install#linux)
+
 https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0
 
 https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
