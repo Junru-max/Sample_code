@@ -2,7 +2,7 @@
 
 Overall workflow:
 
-![image](https://github.com/Junru-max/Sample_code/tree/master/WGS/Photos)
+![image](https://github.com/Junru-max/Sample_code/blob/master/WGS/Photos/dna-alignment-pipeline_1.png)
 
 
 Detection of cancer mutations is different from the detection of germline genetic variants, mainly because:
