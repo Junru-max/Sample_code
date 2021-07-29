@@ -12,6 +12,10 @@ Somatic Variant Calling is implemented across six main procedures:
 
 Overall workflow:
 
+Genome Alignment & Alignment Co-Cleaning
+![image](https://github.com/Junru-max/Sample_code/blob/master/WGS/Photos/dna-alignment-pipeline_1.png)
+
+Somatic Variant Calling & Variant Annotation
 ![image](https://github.com/Junru-max/Sample_code/blob/master/WGS/Photos/dna-alignment-pipeline_1.png)
 
 
