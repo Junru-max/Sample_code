@@ -2,7 +2,7 @@
 
 Overall workflow:
 
-![image](https://user-images.githubusercontent.com/57494911/127574020-48225706-39c3-4d96-a3f1-86a9bebc8661.png)
+![image](https://github.com/Junru-max/Sample_code/tree/master/WGS/Photos)
 
 
 Detection of cancer mutations is different from the detection of germline genetic variants, mainly because:
