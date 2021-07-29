@@ -31,6 +31,10 @@ As part of its goal to overcome obstacles in realizing the full benefits of the 
 https://platform.dnanexus.com/projects/BQZ8jJ80JvPgyQxgQ18009vg/data/ (latest link)
 We have applied mutect2 to the case_001, case_002 and case_003 tumor-normal pair data. For case_001, download TCRBOA1-N-WEX.read1.fastq.bz2, TCRBOA1-N-WEX.read2.fastq.bz2, TCRBOA1-T-WEX.read1.fastq.bz2 and TCRBOA1-T-WEX.read1.fastq.bz2. Download the corresponding data for case_002 and case_003.
 
+Reference data
+https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0
+
+
 ```
 function test() {
   console.log("notice the blank line before this function?");
