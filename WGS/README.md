@@ -1,6 +1,6 @@
 # Somatic Variant Calling
 
-Detection of cancer mutations is different from the detection of germline genetic variants, mainly because:
+# Detection of cancer mutations is different from the detection of germline genetic variants, mainly because:
 
 We are only interested in somatic mutations which are the differences between tumor and germline DNA.
 Tumor samples are often impure due to a mixture of tumor and normal cells.
