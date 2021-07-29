@@ -34,7 +34,7 @@ We have applied mutect2 to the case_001, case_002 and case_003 tumor-normal pair
 Reference data
 https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0
 
-https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38;tab=objects?prefix=&forceOnObjectsSortingFiltering=false
+https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
 
 ```
 function test() {
