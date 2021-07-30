@@ -33,6 +33,7 @@ We have applied mutect2 to the case_001, case_002 and case_003 tumor-normal pair
 
 Reference data in google cloud (Download by google-cloud-sdk: gsutil cp -p rawpath localpath,see also in https://cloud.google.com/sdk/docs/install#linux)
 
+
 https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0
 
 https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
@@ -44,7 +45,7 @@ You should perform proper Initial QC and adapter trimming for your own data.
 Bam files should be generated and preprocessed according to GATKs Best Practice for variant discovery (https://www.broadinstitute.org/gatk/guide/best-practices).
 
 # ALIGNING THE READS TO A REFERENCE GENOME
-We can use bwa_mem to align the reads to a reference genome. We choose b37 as the human reference genome.
+We can use bwa_mem to align the reads to a reference genome. We choose hg37 as the human reference genome.
 
 To use bwa_mem to align the case_001 reads, submit the following jobs to HTC cluster.
 ```
