@@ -35,8 +35,10 @@ Reference data in google cloud (Download by google-cloud-sdk: gsutil cp -p rawpa
 
 
 https://console.cloud.google.com/storage/browser/genomics-public-data/resources/broad/hg38/v0
+Homo_sapiens_assembly38.fasta; Homo_sapiens_assembly38.fasta.fai; Homo_sapiens_assembly38.dict; 1000G_phase1.snps.high_confidence.hg38.vcf.gz; 1000G_phase1.snps.high_confidence.hg38.vcf.gz.tbi;  Homo_sapiens_assembly38.known_indels.vcf.gz; Homo_sapiens_assembly38.known_indels.vcf.gz.tbi;  Mills_and_1000G_gold_standard.indels.hg38.vcf.gz; Mills_and_1000G_gold_standard.indels.hg38.vcf.gz.tbi.
 
 https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
+small_exac_common_3.hg38.vcf.gz; small_exac_common_3.hg38.vcf.gz.tbi; af-only-gnomad.hg38.vcf.gz; af-only-gnomad.hg38.vcf.gz.tbi.
 
 # Initial QC and adapter trimming
 You should perform proper Initial QC and adapter trimming for your own data.
