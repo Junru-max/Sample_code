@@ -39,7 +39,7 @@ Homo_sapiens_assembly38.fasta; Homo_sapiens_assembly38.fasta.fai; Homo_sapiens_a
 
 https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
 
-small_exac_common_3.hg38.vcf.gz; small_exac_common_3.hg38.vcf.gz.tbi; 
+small_exac_common_3.hg38.vcf.gz; small_exac_common_3.hg38.vcf.gz.tbi;\ 
 af-only-gnomad.hg38.vcf.gz; af-only-gnomad.hg38.vcf.gz.tbi.
 
 # Initial QC and adapter trimming
