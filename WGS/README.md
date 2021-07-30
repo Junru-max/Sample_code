@@ -37,6 +37,16 @@ https://console.cloud.google.com/storage/browser/genomics-public-data/resources/
 
 https://console.cloud.google.com/storage/browser/gatk-best-practices/somatic-hg38
 
+# Initial QC and adapter trimming
+You should perform proper Initial QC and adapter trimming for your own data.
+
+# Generation and initial processing of bam files
+Bam files should be generated and preprocessed according to GATKs Best Practice for variant discovery (https://www.broadinstitute.org/gatk/guide/best-practices).
+
+# ALIGNING THE READS TO A REFERENCE GENOME
+We can use bwa_mem to align the reads to a reference genome. We choose b37 as the human reference genome.
+
+To use bwa_mem to align the case_001 reads, submit the following jobs to HTC cluster.
 ```
 function test() {
   console.log("notice the blank line before this function?");
