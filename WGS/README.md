@@ -48,7 +48,30 @@ We can use bwa_mem to align the reads to a reference genome. We choose b37 as th
 
 To use bwa_mem to align the case_001 reads, submit the following jobs to HTC cluster.
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+#!/bin/bash
+#
+#sBATCH --job-name=bwa_mem_case1
+#SBATCH -N 1
+#SBATCH --cpus-per-task=8 # Request that ncpus be allocated per process.
+#SBATCH -t 1-00:00 # Runtime in D-HH:MM
+#SBATCH --output=bwa_mem_case1.out
+
+module load gcc/8.2.0
+module load bwa/0.7.17
+module load samtools/1.9
+
+bwa index hg38_v0_Homo_sapiens_assembly38.fasta
+
+bwa mem -t 8 -T 0 \
+-R '@RG\tID:0\tPL:Illumina\tPU:700807_20131106_C2P0JACXX-6-ID04\tLB:TCRB.TCR002103-B-1_1AMP\tDT:2013-11-17T20:22:39-0600\tSM:TCR002103-B\tCN:BCM' \
+hg38_v0_Homo_sapiens_assembly38.fasta  \
+<(bzip2 -dc ./case_001/TCRBOA1-N-WEX.read1.fastq.bz2) \
+<(bzip2 -dc ./case_001/TCRBOA1-N-WEX.read2.fastq.bz2) | samtools view -Shb -o TCRBOA1-N-WEX.bam -
+
+bwa mem -t 8 -T 0 \
+-R '@RG\tID:0\tPL:Illumina\tPU:700807_20131106_C2P0JACXX-6-ID06\tLB:TCRB.TCR002103-T-1_1AMP\tDT:2013-11-17T20:25:26-0600\tSM:TCR002103-T\tCN:BCM' \
+hg38_v0_Homo_sapiens_assembly38.fasta  \
+<(bzip2 -dc ./case_001/TCRBOA1-T-WEX.read1.fastq.bz2) \
+<(bzip2 -dc ./case_001/TCRBOA1-T-WEX.read2.fastq.bz2) | samtools view -Shb -o TCRBOA1-T-WEX.bam -
+
 ```
